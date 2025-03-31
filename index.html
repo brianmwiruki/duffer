@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Pro Trading Group - FBS Partner Program</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #0F172A;
+            color: #F8FAFC;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #1E293B;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #38BDF8;
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .step-card {
+            background: #1E293B;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            width: 50%;
+        }
+
+        .step-number {
+            background: #38BDF8;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .benefits-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .benefit-card {
+            background: #1E293B;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            background: #1E293B;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            color: #F8FAFC;
+        }
+
+        button {
+            background: #38BDF8;
+            color: #0F172A;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            width: auto;
+            display: inline-block;
+        }
+
+        .disclaimer {
+            font-size: 0.875rem;
+            color: #94A3B8;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Get Free Daily Trading Signals</h1>
+            <p>Join 1,500+ traders using proven FBS strategies</p>
+        </div>
+
+        <div class="step-card">
+            <h2>Why FBS?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>✅ Lowest Spreads</h3>
+                    <p>Average 0.1 pips on EUR/USD (vs. 1.5 pips with competitors)</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🚀 Instant Execution</h3>
+                    <p>99.7% order fill rate (industry average: 97.2%)</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🛡️ Regulated Security</h3>
+                    <p>Licensed by CySEC & IFSC (unlike unregulated platforms)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="steps">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h2>Create Your FBS Account</h2>
+                <p>Get started in 2 minutes:</p>
+                <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                    <li>Click our partner link below</li>
+                    <li>Complete basic verification</li>
+                    <li>Deposit $50+ to activate trades</li>
+                </ul>
+                <a href="https://fbs.partners?ibl=871464&ibp=34364001" target="_blank" style="text-decoration: none;">
+                    <button>Open Free FBS Account →</button>
+                </a>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h2>Verify & Get Telegram Access</h2>
+                <form id="verificationForm" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>FBS Account Screenshot (Proof of Signup)</label>
+                        <input type="file" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required>
+                            I confirm I've completed Step 1 using the link above
+                        </label>
+                    </div>
+                    <button type="submit">Get Telegram Link</button>
+                </form>
+            </div>
+        </div>
+
+        <p class="disclaimer">
+            *Past performance not indicative of future results. 74% of retail investor accounts lose money. FBS is a licensed broker (view regulation certificates). We earn commission if you use our link.
+        </p>
+    </div>
+
+    <script>
+        function validateForm() {
+            alert('Success! Telegram link sent to your email.');
+            window.location.href = '[YOUR_TELEGRAM_LINK]';
+            return false;
+        }
+    </script>
+</body>
+</html>
